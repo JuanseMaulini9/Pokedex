@@ -21,7 +21,7 @@ const PokemonCard = ({ pokemon }) => {
               )
             })
             }</div>
-          <div className="pokemon-favorite">❤</div>
+          <div className="pokemon-favorite">&#10084;&#65039;</div>
         </div>
       </div>
     </div>
