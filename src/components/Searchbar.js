@@ -13,7 +13,6 @@ const Searchbar = () => {
   const onClick = async (e) => {
     const data = await searchPokemon(search);
     setPokemon(data);
-    console.log(pokemon);
   };
 
   return (

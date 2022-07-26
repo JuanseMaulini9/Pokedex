@@ -13,7 +13,6 @@ const Pokedex = ({ pokemons, page, setPage, total, loading }) => {
     setPage(nextPage);
   };
 
-
   return (
     <div>
       <div className="header">
@@ -25,15 +24,15 @@ const Pokedex = ({ pokemons, page, setPage, total, loading }) => {
           onRightClick={nextPage}
         />
       </div>
-      {loading ? <div>Cargando pokemons....</div>:
-        
-      
-      <div className="pokedex-grid">
-        {pokemons.map((pokemon, index) => {
-          return <PokemonCard pokemon={pokemon} key={pokemon.name} />;
-        })}
-      </div>
-      }
+      {loading ? (
+        <div>Cargando pokemons....</div>
+      ) : (
+        <div className="pokedex-grid">
+          {pokemons.map((pokemon) => {
+            return <PokemonCard pokemon={pokemon} key={pokemon.name} />;
+          })}
+        </div>
+      )}
     </div>
   );
 };
