@@ -3,8 +3,7 @@ import { useContext } from "react";
 import favoriteContext from "../context/favoriteContext";
 
 const Navbar = () => {
-  
-  const {favoritePokemon} = useContext(favoriteContext)
+  const { favoritePokemon } = useContext(favoriteContext);
 
   const imageURL =
     "https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png";
